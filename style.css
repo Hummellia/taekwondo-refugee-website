@@ -3,14 +3,192 @@
   --line-height: 1.6;
   --letter-spacing: 3px;
   --h1-size: 40px;
+
+/* Farben */
+  --primary-color: #2563eb;
+  --background-color: #ffffff;
+  --text-color: #111827;
+
+/* Schriften */
+  --main-font: 'Roboto Condensed', sans-serif;
+  --heading-font: 'Bebas Neue', sans-serif;
+
+/* Grösse */
+  --h1-size: 40px;
+  --text-size: 16px;
+
+/* Abstand */
+  --padding: 16px;
+  --margin: 16px;
+
+/* Ränder rund machen */
+  --border-radius: 8px;
 }
 
-body {
-  color: var(--text-color);
-  line-height: var(--line-height);
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-h1 {
-  font-size: var(--h1-size);
-  letter-spacing: var(--letter-spacing);
+/* BODY */
+body{
+  font-family: 'Roboto', sans-serif;
+  background:white;
 }
+
+/* HEADER */
+.header{
+  width:100%;
+  height:110px;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  padding:0 60px;
+
+  background:#f5f5f5;
+
+  border-bottom:4px solid black;
+}
+
+/* LOGO */
+.logo img{
+  height:70px;
+  object-fit:contain;
+}
+
+/* NAVIGATION */
+.navbar{
+  display:flex;
+  gap:55px;
+}
+
+/* NAV LINKS */
+.navbar a{
+  text-decoration:none;
+  color:#111;
+  font-size:18px;
+  font-weight:400;
+  transition:0.3s;
+}
+
+/* HOVER */
+.navbar a:hover{
+  color:#c4002f;
+}
+
+/* RIGHT SIDE */
+.header-right{
+  display:flex;
+  align-items:center;
+  gap:35px;
+}
+
+/* RED LINKS */
+.red-link{
+  color:#c4002f;
+  text-decoration:none;
+  font-size:17px;
+  font-weight:700;
+}
+
+/* LANGUAGE */
+.language{
+  color:#111;
+  text-decoration:none;
+  font-size:17px;
+  font-weight:700;
+}
+
+/* RESPONSIVE */
+@media(max-width:1200px){
+
+    .navbar{
+      display:none;
+    }
+
+    .header{
+      padding:0 20px;
+    }
+
+}
+
+/* Ganze Section */
+.hero {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Linke Seite */
+.hero-left {
+    width: 50%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px;
+}
+
+/* Kleine Überschrift */
+.small-title {
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-top: 2px solid white;
+    padding-top: 10px;
+    width: fit-content;
+}
+
+/* Große Überschrift */
+.hero-left h1 {
+    font-size: 70px;
+    line-height: 1.1;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Text */
+.hero-text {
+    font-size: 22px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
+/* Button */
+.hero-btn {
+    display: inline-block;
+    background-color: #d4003b;
+    color: white;
+    text-decoration: none;
+    padding: 18px 35px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+    width: fit-content;
+}
+
+/* Hover Effekt */
+.hero-btn:hover {
+    background-color: #ff0055;
+}
+
+/* Rechte Seite */
+.hero-right {
+    width: 50%;
+}
+
+.hero-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
