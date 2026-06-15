@@ -18,16 +18,17 @@
   --grey-box:#f1f1f3;
 
   /* FONTS */
-  --main-font:'Roboto', sans-serif;
-  --heading-font:'Bebas Neue', sans-serif;
-
+  --main-font:'Inter', sans-serif;
+  --heading-font: 'Bebas Neue', sans-serif;
+  
   /* FONT SIZES */
-  --h1-size:40px;
-  --h2-size:32px;
-  --h3-size:24px;
+  --h1-size: 60px;
+  --h2-size: 22px;
+  --h3-size: 22px;
+  --h4-size: 12px;
 
-  --text-size:16px;
-  --small-size:13px;
+  --text-size: 13px;
+  --small-size: 14px;
 
   /* SPACING */
   --section-padding:60px 20px;
@@ -85,24 +86,69 @@ ul{
 ========================= */
 
 h1{
-    font-size:var(--h1-size);
+    font-family: 'Inter', sans-serif;
+    font-size: 2000px;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+    text-align: center;
 }
 
 h2{
-    font-size:var(--h2-size);
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: 0em;
+}
+
+h2 span {
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.1;
+    letter-spacing: 0em;
 }
 
 h3{
-    font-size:var(--h3-size);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+h4{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: 0em;
 }
 
 p{
-    font-size:var(--text-size);
-    color:var(--text-light);
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1.6;
+    letter-spacing: 0em;
+    color: var(--text-light);
+    margin-bottom: 12px;
 }
 
-
-
+p span {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.0;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
 
 
 /* =========================
@@ -207,14 +253,20 @@ header {
 }
 
 .hero h1{
-    font-size:40px;
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    line-height: 1.08;
+    text-align: center;
     margin-bottom:10px;
     color: #fff;
-    line-height: 1.1;
 }
 
 .hero-text{
-    font-size:14px;
+    font-size:13px;
+    font-weight:500;
+    font-style:italic;
+    line-height:1.6;
     margin-bottom:20px;
     color: #fff;
 }
@@ -226,8 +278,6 @@ header {
     color:#fff;
     text-decoration:none;
 }
-
-
 
 
 /* =========================
@@ -273,8 +323,6 @@ section:not(:last-child)::after {
 }
 
 h2 {
-    font-size: 26px;
-    font-weight: 800;
     margin-bottom: 15px;
 }
 
@@ -337,7 +385,6 @@ p {
 /* =========================
    BLOG CARDS
 ========================= */
-/* BLOG SECTION */
 .blog-section {
     display: flex;
     justify-content: center;
@@ -347,7 +394,6 @@ p {
     flex-wrap: wrap;
 }
 
-/* BLOG CARD */
 .blog-card {
     width: 320px;
     background: #fff;
@@ -361,7 +407,6 @@ p {
     transform: translateY(-5px);
 }
 
-/* IMAGE */
 .blog-card img {
     width: 100%;
     height: 220px;
@@ -370,23 +415,20 @@ p {
     border-top: 3px solid #c4002f;
 }
 
-/* CONTENT */
 .blog-content {
     padding: 25px;
 }
 
-/* SMALL TITLE */
 .card-small-title {
     color: #c4002f;
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: 0.05em;
     margin-bottom: 10px;
     position: relative;
-    letter-spacing: 1px;
 }
 
-/* Kleine rote Linie */
 .card-small-title::after {
     content: "";
     display: block;
@@ -396,18 +438,18 @@ p {
     margin-top: 6px;
 }
 
-/* HEADING */
 .blog-content h3 {
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 700;
     line-height: 1.3;
     color: #111;
     margin-bottom: 15px;
 }
 
-/* TEXT */
 .blog-content p {
-    font-size: 15px;
+    font-size: 13px;
+    font-weight: 500;
+    font-style: italic;
     line-height: 1.6;
     color: #666;
 }
@@ -524,15 +566,8 @@ textarea {
 }
 
 
-
-
-
-
-
-
-
 /* =========================
-   RED SECTION
+   RED SECTION (UHP)
 ========================= */
 
 .uhp-red-section{
@@ -551,9 +586,10 @@ textarea {
 }
 
 .uhp-red-section h2{
-    font-size:42px;
-    line-height:1;
-    font-weight:300;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: 0em;
     margin-bottom:25px;
     color:#fff;
 }
@@ -561,14 +597,18 @@ textarea {
 .red-intro{
     color:#fff;
     font-style:italic;
-    font-weight:700;
-    line-height:1.8;
+    font-weight:500;
+    font-size:13px;
+    line-height:1.6;
     margin-bottom:25px;
 }
 
 .red-text{
     color:rgba(255,255,255,0.85);
-    line-height:1.8;
+    font-size:13px;
+    font-weight:500;
+    font-style:italic;
+    line-height:1.6;
     margin-bottom:35px;
 }
 
@@ -586,18 +626,21 @@ textarea {
 .red-card h3{
     color:#fff;
     margin-bottom:15px;
-    font-size:18px;
+    font-size: 22px;
 }
 
 .red-card p{
     color:rgba(255,255,255,0.9);
-    line-height:1.7;
+    line-height:1.6;
     margin-bottom:20px;
+    font-size:13px;
+    font-weight:500;
+    font-style:italic;
 }
 
 
 /* =========================
-   SOCIAL
+   SOCIAL ROW
 ========================= */
 
 .social-row{
@@ -635,16 +678,6 @@ textarea {
 
 
 /* =========================
-   ALLGEMEIN
-========================= */
-body{
-    margin:0;
-    font-family: Arial, sans-serif;
-    background:#e5e5e5;
-    color:white;
-}
-
-/* =========================
    TEXT SECTION
 ========================= */
 .text-section{
@@ -655,10 +688,10 @@ body{
 
 .section-small-title{
     color:#c4002f;
-    font-size:13px;
+    font-size:10px;
     font-weight:700;
     text-transform:uppercase;
-    letter-spacing:1px;
+    letter-spacing:0.05em;
     margin-bottom:15px;
 }
 
@@ -672,15 +705,18 @@ body{
 }
 
 .text-section h2{
-    font-size:38px;
-    line-height:1.2;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1.1;
     margin-bottom:25px;
-    font-weight:700;
 }
 
 .text-section p{
     color:#555;
-    line-height:1.7;
+    font-size:13px;
+    font-weight:500;
+    font-style:italic;
+    line-height:1.6;
     margin-bottom:20px;
 }
 
@@ -693,9 +729,10 @@ body{
 }
 
 .partner-section h2{
-    font-size:36px;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1.1;
     margin-bottom:35px;
-    line-height:1.2;
 }
 
 .partner-container{
@@ -704,7 +741,6 @@ body{
     gap:18px;
 }
 
-/* PARTNER BOX */
 .partner-box{
     background:#ab0028;
     border-radius:6px;
@@ -739,7 +775,6 @@ body{
     width:100%;
 }
 
-/* FORM */
 form{
     display:flex;
     flex-direction:column;
@@ -761,7 +796,6 @@ form textarea{
     resize:none;
 }
 
-/* CHECKBOX */
 .checkbox{
     font-size:13px;
     margin-bottom:20px;
@@ -771,7 +805,6 @@ form textarea{
     line-height:1.5;
 }
 
-/* BUTTON */
 form button{
     background:#c4002f;
     color:#fff;
@@ -785,7 +818,6 @@ form button{
 form button:hover{
     background:#9f0026;
 }
-
 
 
 /* =========================
@@ -806,18 +838,19 @@ form button:hover{
 }
 
 .uhp-box h3 {
-    font-size: 24px;
-    font-weight: 800;
-    color: #111;
-    margin-bottom: 25px;
-    line-height: 1.3;
-}
-
-.uhp-box p {
     font-size: 22px;
     font-weight: 800;
     color: #111;
-    line-height: 1.4;
+    margin-bottom: 25px;
+    line-height: 1.1;
+}
+
+.uhp-box p {
+    font-size: 13px;
+    font-weight: 500;
+    font-style: italic;
+    color: #111;
+    line-height: 1.6;
     margin-bottom: 18px;
 }
 
@@ -846,4 +879,3 @@ footer{
 .footer-links a:hover{
     color:white;
 }
-
